@@ -11,19 +11,16 @@ import android.view.ScaleGestureDetector;
 import android.view.View;
 
 
-import com.amap.R;
 import com.amap.api.maps.AMap;
 import com.amap.api.maps.CameraUpdate;
 import com.amap.api.maps.CameraUpdateFactory;
 import com.amap.api.maps.MapView;
 import com.amap.api.maps.Projection;
-import com.amap.api.maps.model.BitmapDescriptorFactory;
 import com.amap.api.maps.model.CameraPosition;
 import com.amap.api.maps.model.Circle;
 import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.LatLngBounds;
 import com.amap.api.maps.model.Marker;
-import com.amap.api.maps.model.MyLocationStyle;
 import com.amap.api.maps.model.Polygon;
 import com.amap.api.maps.model.Polyline;
 import com.facebook.react.bridge.LifecycleEventListener;
