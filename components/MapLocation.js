@@ -1,17 +1,17 @@
 import {NativeModules, DeviceEventEmitter} from 'react-native';
 
-const AMapLocation = NativeModules.AMapLocation;
+const MapLocation = NativeModules.AMapLocation;
 const onLocationChanged = 'onLocationChangedAMAPLOCATION';
 
 
 export default class ALocation {
 
   static startLocation(options) {
-    AMapLocation.startLocation(options);
+    MapLocation.startLocation(options);
   }
 
   static stopLocation() {
-    AMapLocation.stopLocation();
+    MapLocation.stopLocation();
   }
 
   static addEventListener(handler) {

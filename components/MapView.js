@@ -16,6 +16,7 @@ import MapPolyline from './MapPolyline';
 import MapPolygon from './MapPolygon';
 import MapCircle from './MapCircle';
 import MapCallout from './MapCallout';
+import MapLocation from './MapLocation';
 
 class MapView extends React.Component {
     static defaultProps = {
@@ -424,6 +425,7 @@ MapView.Polyline = MapPolyline;
 MapView.Polygon = MapPolygon;
 MapView.Circle = MapCircle;
 MapView.Callout = MapCallout;
+MapView.MapLocation=MapLocation;
 
 MapView.Animated = Animated.createAnimatedComponent(MapView);
 
