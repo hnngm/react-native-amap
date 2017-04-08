@@ -36,6 +36,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.facebook.react:react-native:+'
     // From node_modules
-    compile files('libs/AMap3DMap_5.0.0_AMapNavi_5.0.0_AMapSearch_5.0.0_AMapLocation_3.3.0.jar')
+    compile files('libs/AMap_Location_V3.3.0_20170118.jar')
+    compile files('libs/Android_Map3D_SDK_V5.0.0_20170311.jar')
 }
 
