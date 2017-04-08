@@ -1,6 +1,6 @@
 {
-	"name": "reactnativeamap",
-	"version": "0.0.4",
+	"name": "react-native-amap",
+	"version": "0.0.5",
 	"main":"index.js",
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",

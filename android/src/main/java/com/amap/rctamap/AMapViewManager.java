@@ -7,7 +7,6 @@ import com.amap.api.maps.MapsInitializer;
 import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.LatLngBounds;
 import com.amap.api.maps.model.MyLocationStyle;
-import com.amap.api.navi.view.AmapCameraOverlay;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReadableArray;
@@ -75,7 +74,7 @@ public class AMapViewManager extends ViewGroupManager<AMapView> {
     @Override
     protected AMapView createViewInstance(ThemedReactContext context) {
         reactContext = context;
-        AMapView view = new AMapView(context, null);
+        AMapView view = new AMapView(context, this);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
