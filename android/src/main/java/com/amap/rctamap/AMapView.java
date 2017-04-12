@@ -48,7 +48,7 @@ public class AMapView extends MapView implements AMap.InfoWindowAdapter,
 //    private LocationSource.OnLocationChangedListener mListener = null;//定位监听器
 
     private LatLngBounds boundsToMove;
-    private boolean showUserLocation = false;
+    private boolean showUserLocation = true;
     private boolean isMonitoringRegion = false;
     private boolean isTouchDown = false;
     private static final String[] PERMISSIONS = new String[] {
@@ -213,7 +213,7 @@ public class AMapView extends MapView implements AMap.InfoWindowAdapter,
             public void onHostResume() {
                 if (hasPermissions()) {
                     //noinspection MissingPermission
-                    map.setMyLocationEnabled(showUserLocation);
+                    //map.setMyLocationEnabled(showUserLocation);
                 }
                 synchronized (AMapView.this) {
                     AMapView.this.onResume();
@@ -225,7 +225,7 @@ public class AMapView extends MapView implements AMap.InfoWindowAdapter,
             public void onHostPause() {
                 if (hasPermissions()) {
                     //noinspection MissingPermission
-                    map.setMyLocationEnabled(false);
+                    //map.setMyLocationEnabled(false);
                 }
                 synchronized (AMapView.this) {
                     AMapView.this.onPause();
